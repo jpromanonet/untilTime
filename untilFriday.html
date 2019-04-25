@@ -63,10 +63,10 @@
 									
 													secs=Math.floor(amount);//seconds
 									
-													if(days != 0){out += days +" day"+((days!=1)?"s":"")+", ";}
-													if(days != 0 || hours != 0){out += hours +" hour"+((hours!=1)?"s":"")+", ";}
-													if(days != 0 || hours != 0 || mins != 0){out += mins +" minute"+((mins!=1)?"s":"")+", ";}
-													out += secs +" seconds";
+													if(days != 0){out += days +" DIA"+((days!=1)?"s":"")+", ";}
+													if(days != 0 || hours != 0){out += hours +" HR"+((hours!=1)?"s":"")+", ";}
+													if(days != 0 || hours != 0 || mins != 0){out += mins +" MIN"+((mins!=1)?"s":"")+", ";}
+													out += secs +" Ss";
 													document.getElementById('countbox').innerHTML=out;
 									
 													setTimeout("GetCount()", 1000);
