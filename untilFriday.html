@@ -14,7 +14,30 @@
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
                     
 		</head>
-		<body background="http://www.52dazhew.com/data/out/9/585405086-90s-desktop-wallpaper.png">
+		
+		<body background="http://sfwallpaper.com/images/felix-the-cat-wallpaper-2.jpg">
+			<SCRIPT TYPE="text/javascript" LANGUAGE="JavaScript">
+				window.addEvent('domready',function() {
+	var container = $(document.body),
+		speed = 1200;
+	container.addEvent('mousemove',function(e) {
+		var image = new Element('img',{
+			src: 'pointer.png',
+			styles: {
+				position: 'absolute',
+				top: e.page.y,
+				left: e.page.x
+			},
+			tween: {
+				duration: speed,
+				onComplete: function() {
+					image.dispose();
+				}
+			}
+		}).inject(container,'top').fade('out');
+	});
+});
+				</script>
 			<div class="container">
                  <div class="row"></br></br>
                     <div class = "col-lg-12 col-md-12 col-sm-12 col-sx-12">
